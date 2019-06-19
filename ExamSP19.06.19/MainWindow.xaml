@@ -1,0 +1,38 @@
+﻿<Window x:Class="ExamSP19._06._19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamSP19._06._19"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="450*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="#FFCCCC">
+            <Button Background="AntiqueWhite" Name="startButton" Click="StartButtonClick" Content="stAAAArt" FontSize="40" HorizontalAlignment="Center" Margin="48,197,41,0" VerticalAlignment="Top" Width="188" Height="79" FontWeight="Bold"/>
+            <TextBox Name="numberTextBox" HorizontalAlignment="Center" Height="40" Margin="102,122,95,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="25" Text=""
+                     VerticalAlignment="Top" Width="80"/>
+            <Label Background="AntiqueWhite" Content="Enter one positively number" HorizontalAlignment="Center" Margin="5,26,5,0" VerticalAlignment="Top" Width="267" Height="54" HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" FontSize="20"/>
+            <Separator  Height="409" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        </Grid>
+        <Grid Grid.Column="1" Background="#00FFCC">
+            <TextBox Name="typeTextBox" HorizontalAlignment="Left" Height="25" Margin="182,121,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" Text="" VerticalAlignment="Top" Width="180"/>
+            <TextBox Name="genderTextBox" HorizontalAlignment="Left" Height="25" Margin="182,161,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" Text="" VerticalAlignment="Top" Width="180"/>
+            <TextBox Name="sizeTextBox" HorizontalAlignment="Left" Height="25" Margin="182,201,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" Text="" VerticalAlignment="Top" Width="180"/>
+            <TextBox Name="countryTextBox" HorizontalAlignment="Left" Height="25" Margin="182,241,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" Text="" VerticalAlignment="Top" Width="180"/>
+            <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="25" Margin="182,281,0,0" TextWrapping="Wrap" TextAlignment="Left" FontSize="15" Text="" VerticalAlignment="Top" Width="180"/>
+            <Label Content="Type of clothes:" Background="#CCFFFF" HorizontalAlignment="Left" FontSize="15" Margin="10,121,0,0" VerticalAlignment="Top" Width="143" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Gender:" Background="#CCFFFF" HorizontalAlignment="Left" FontSize="15" Margin="33,161,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Size:" Background="#CCFFFF" HorizontalAlignment="Left" FontSize="15" Margin="33,201,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Country:" Background="#CCFFFF" HorizontalAlignment="Left" FontSize="15" Margin="33,241,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Price:" Background="#CCFFFF" HorizontalAlignment="Left" FontSize="15" Margin="33,281,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="New clothes" HorizontalContentAlignment="Center" Background="#CCFFFF" HorizontalAlignment="Center" Margin="132,29,81,0" FontSize="30" VerticalAlignment="Top" Width="202"/>
+            <Button Background="#CCFFFF" Click="AddButtonClick" Name="addButton" Content="Add to database" FontSize="20" HorizontalAlignment="Center" Margin="116,350,111,0" VerticalAlignment="Top" Width="188" Height="40" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>
